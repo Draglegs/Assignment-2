@@ -15,7 +15,7 @@ unsigned char* SSHA(const unsigned char* msg, size_t length) {
             unsigned char old_E = E;
             unsigned char old_B = B;
             A = A >> 2;
-            B = B << 1;
+            B = B >> 1;
             E = (g + msg[i] + B);
             D = A ^ B;
             C = (A + old_E);
