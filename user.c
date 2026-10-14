@@ -68,7 +68,7 @@ void generateDigest(struct Digest* digest, struct User* User) {
     digest->hash1 = result[1];
     digest->hash2 = result[2];
     digest->hash3 = result[3];
-    digest->hash4 = result[5]; // Logical Error: Incorrectly updating the next pointer
+    digest->hash4 = result[4]; // Logical Error: Incorrectly updating the next pointer
 }
 void verify(struct User* curr) {
     int height = 2;
